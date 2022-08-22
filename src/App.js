@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ColorSchemesExample from './component/nav';
+import navprincipal from './component/nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
   return (
     
     <div className="App">
-      <ColorSchemesExample />
+      <navprincipal />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p class="fs-2">
