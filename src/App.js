@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import ColorSchemesExample from './component/nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const App = () => {
+
+  const creador  = { nombre: "Rick", creacion: "app"};
+
   return (
+    
     <div className="App">
+      <ColorSchemesExample />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p class="fs-2">
+          {creador.nombre} - {creador.creacion}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="app-container">
+          <button class= "btn btn-danger font-monospace">BIENVENIDOS A MI APP</button>
+        </div>
       </header>
     </div>
   );
