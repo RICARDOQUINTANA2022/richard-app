@@ -1,4 +1,4 @@
-import ItemCount from './ItemCountW';
+import ItemCount from '../component/ItemCountW';
 
 const ItemListContainer = () => {
     return ( 
