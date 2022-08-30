@@ -1,6 +1,11 @@
+import ItemCount from './ItemCountW';
+
 const ItemListContainer = () => {
     return ( 
-        <h1 className= "font-monospace">Bienvenidos a mi Web</h1>
+        <div>
+            <ItemCount />
+        </div>
+        
     )
 }
 
