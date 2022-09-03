@@ -1,9 +1,12 @@
 import ItemCount from '../component/ItemCountW';
 
-const ItemListContainer = () => {
+export const ItemListContainer = () => {
+    const onadd = (quantity) => {
+        alert(`Usted eligio ${quantity} productos`)
+    }
     return ( 
         <div>
-            <ItemCount />
+            <ItemCount initial={1} stock={5} onadd={onadd} />
         </div>
         
     )
